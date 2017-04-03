@@ -1,0 +1,56 @@
+{
+  "name": "fio",
+  "scale_max": 1,
+  "description": "disk benchmarks",
+  "author": "benchmarks",
+  "licensed": true,
+  "classifications": [
+    "benchmarks"
+  ],
+  "machines": [
+    "n3",
+    "n4",
+    "nc3",
+    "ng0",
+    "ng1",
+    "ng2",
+    "ng3",
+    "ng4",
+    "ng5",
+    "ng6",
+    "ng7",
+    "ngd2",
+    "ngd3",
+    "ngd4",
+    "ngd5",
+    "np8g1",
+    "np8g4"
+  ],
+  "vault-types": [
+    "FILE",
+    "BLOCK",
+    "BLOCK_ARRAY",
+    "OBJECT"
+  ],
+  "commands": {
+    "batch": {
+      "path": "/usr/local/bin/app.sh",
+      "interactive": false,
+      "name": "batch",
+      "description": "run fio test",
+      "parameters": {
+        "OUTPUT_FILE": {
+          "name": "output",
+          "type": "STR",
+          "value": "/data/system_benchmarks/fio.csv",
+          "required": true,
+          "variable": true
+        }
+    }
+   }
+  },
+  "image": {
+    "data": "",
+    "type": "image/png"
+  }
+}
